@@ -42,7 +42,7 @@ class Main extends Controller {
     public function index() {
 
         $file = APP_DIR . 'upload' . DIRECTORY_SEPARATOR . 'Example.xlsx';
-        $config = $config = new Config('config');
+        $config = new Config('config');
 
         try {
             if(!$this->file->fileAvailable($file)) {
